@@ -1,0 +1,90 @@
+.select2-search--dropdown {
+    display: none;
+}
+.select2-dropdown {
+    border: 0;
+    padding: 20px;
+    box-shadow: 0px 15px 40px rgba(41, 45, 50, 0.1);
+}
+.select2-container .select2-selection--single {
+    height: 50px;
+    border-radius: 8px !important;
+}
+.selectPayment .select2-container .select2-selection--single {
+    height: 40px;
+    border-radius: 8px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #676b83;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.selectPayment .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 40px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 20px;
+}
+.select2-container--default .select2-selection--single {
+    border: 1px solid #cacbd4;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.select2-selection__arrow b {
+    border: 0 !important;
+    background-repeat: no-repeat;
+    width: 20px !important;
+    height: 16px !important;
+    position: absolute;
+    right: 0;
+    top: 0 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6 7.45837L11.1667 12.8917C10.525 13.5334 9.47503 13.5334 8.83336 12.8917L3.40002 7.45837' stroke='%239296A9' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-left: -20px;
+    margin-top: 13px;
+}
+.selectPayment .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-top: 10px;
+}
+.select2-results__option {
+    background-color: #fff !important;
+    font-size: 16px !important;
+}
+.select2-results__option:hover {
+    background-color: #fff3ee !important;
+    color: #ff783b !important;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #fff;
+    color: #676b83;
+}
+
+@media (max-width: 1600px) and (min-width: 1400px) {
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        margin-left: -12px;
+    }
+    .select2-results__option {
+        font-size: 13px !important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 14px;
+    }
+}
+.customerDetailsCard span.select2.select2-container {
+    width: 100% !important;
+}
+
+@media (max-width: 991px) {
+    span.select2.select2-container {
+        width: 100% !important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b {
+        margin-left: -13px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        font-size: 14px;
+    }
+}

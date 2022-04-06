@@ -1,0 +1,60 @@
+.step {
+    list-style: none;
+    padding: 0;
+  }
+  .step .step-item {
+    -ms-flex: 1 1 0;
+    flex: 1 1 0;
+    margin-top: 0;
+    min-height: 1rem;
+    position: relative;
+    text-align: center;
+    right: -141px;
+  }
+  .step .step-item:not(:first-child)::before {
+    background: red;
+    content: "";
+    height: 2px;
+    left: -50%;
+    position: absolute;
+    top: 15px;
+    width: 0%;
+  }
+  .step .step-item a {
+    color: #000;
+    display: inline-block;
+    padding: 40px 10px 0;
+    text-decoration: none;
+    font-size: 13px;
+    position: absolute;
+    left: 11px;
+  }
+  .step .step-item a::before {
+    content: attr(data-step-count);
+    display: grid;
+    place-items: center;
+    background:red;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: #8a9aa4;
+    font-weight: 600;
+    border: 1px solid #676B83;
+  }
+  .step .step-item.completed a::before {
+    color: #fff;
+  }
+  .step .step-item.active a::before {
+    background:red;
+    color: #fff;
+  }
+  .step .step-item.active ~ .step-item::before, 
+  .step .step-item.active ~ .step-item a::before {
+    background: #fff;
+  }
+  
